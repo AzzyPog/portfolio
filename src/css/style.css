@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #837E9F;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #22212C;
+    color: #837E9F;
+
 }
 
 ul {
@@ -264,6 +265,7 @@ footer {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
+    color: #837E9F;
 }
 
 .see-all:hover{
@@ -289,8 +291,16 @@ footer {
     border-radius: 20px;
     padding-left: 30px;
     padding-top: 25px;
+    text-decoration: none;
+    transition: 500ms;
+    color: #837E9F;
 }
 
+.project-item:hover{
+    transition: 500ms;
+    background-color: #837E9F;
+    color: #302F3D;
+}
 
 
 .project-image{
@@ -299,9 +309,9 @@ footer {
     height: 24px;
 }
 
+
 .project-container{
     display: flex;
-   
     align-items: center;
 }
 
@@ -312,6 +322,11 @@ footer {
     height: 95%;
     overflow: auto;
     padding-top: 15px;
+}
+
+.project-name{
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .color-ball{
