@@ -14,7 +14,7 @@
     <main>
         <section>
             <div class="box">
-                <img class="profileImage" src="src/assets/me.svg" alt="placeholder">
+                <img class="profileImage" id="profile" src="src/assets/me.svg" alt="placeholder">
                 <h2 class="myName">Renato Longo Filho</h2>
                 <p>Fullstack Web Developer</p>
             </div>
@@ -24,19 +24,24 @@
                     <img src="/src/assets/map-pin.svg" alt="map-pin" class="source"><span>Rio de Janeiro, Brasil</span>
                 </p>
                 <p class='information-source'>
-                    <img src="/src/assets/briefcase.svg" alt="briefcase" class="source"><a>EJCM</a>
+                    <img src="/src/assets/briefcase.svg" alt="briefcase" class="source"><a
+                        class="information-links">EJCM</a>
                 </p>
                 <p class='information-source'>
-                    <img src="src/assets/linkedin.svg" alt="linkedin" class="source"><a>Renato Longo Filho</a>
+                    <img src="src/assets/linkedin.svg" alt="linkedin" class="source"><a class="information-links">Renato
+                        Longo Filho</a>
                 </p>
                 <p class='information-source'>
-                    <img src="/src/assets/github.svg" alt="github" class="source"><a>AzzyPog</a>
+                    <img src="/src/assets/github.svg" alt="github" class="source"><a
+                        class="information-links">AzzyPog</a>
                 </p>
                 <p class='information-source'>
-                    <img src="/src/assets/mail.svg" alt="mail" class="source"><span>renato.longo1406@gmail.com</span>
+                    <img src="/src/assets/mail.svg" alt="mail" class="source"><span
+                        class="information-links">renato.longo1406@gmail.com</span>
                 </p>
                 <p class='information-source'>
-                    <img src="/src/assets/phone-call.svg" alt="phone" class="source"><span>+55 (21) 97946-2580</span>
+                    <img src="/src/assets/phone-call.svg" alt="phone" class="source"><span class="information-links">+55
+                        (21) 97946-2580</span>
                 </p>
                 </p>
             </div>
@@ -86,7 +91,7 @@
                         <p class="list-time">2018 - 2021</p>
                     </li>
                     <li class="list-container">
-                        <p class="list-place">Federal do Rio de Janeiro</p>
+                        <p class="list-place">Faculdade Federal do Rio de Janeiro</p>
                         <p class="list-time">2021 - Atualmente</p>
                         <p class="list-function">Ciência da Matemática ênfase em computação</p>
                     </li>
@@ -104,25 +109,48 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <div>
-                <p>Meus Projetos</p>
-                <a href="">Ver todos</a>
+        <section class="section-2">
+            <div class="projects">
+                <p class="my-project">Meus Projetos mais recentes</p>
+                <a class='see-all' href="">Ver todos</a>
             </div>
-            <div>
-                <p>
-                    <img src="src/assets/folder.svg" alt="folder"><span>Projeto aqui</span>
-                </p>
-                <p>
-                    <img src="src/assets/folder.svg" alt="folder"><span>Projeto aqui</span>
-                </p>
+            <div class="project-list">
+                <div class="project-item">
+                    <span class="project-container">
+                        <img src="src/assets/folder.svg" alt="folder" class="project-image"><span
+                            class="projec-name">Project name</span>
+                    </span>
+                    <span class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh
+                        mauris. Nam interdum est eros, eu aliquam purus luctus et.
+                        Nunc elementum lorem tellus.
+                    </span>
+                    <p class="language">
+                        <span class="color-ball"></span><span>linguagem</span>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <span class="project-container">
+                        <img src="src/assets/folder.svg" alt="folder" class="project-image"><span
+                            class="projec-name">Project name</span>
+                    </span>
+                    <span class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh
+                        mauris. Nam interdum est eros, eu aliquam purus luctus et.
+                        Nunc elementum lorem tellus.
+                    </span>
+                    <p class="language">
+                        <span class="color-ball"></span><span>linguagem</span>
+                    </p>
+                </div>
             </div>
         </section>
 
     </main>
+
     <footer>
-        <p>Created by Renato Longo Filho</p>
+        Created by Renato Longo Filho
     </footer>
+    
 </body>
+
 
 </html>
