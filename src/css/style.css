@@ -176,16 +176,8 @@ footer {
     justify-content: center;
 }
 
-/*footer media screen */
-@media screen and (min-height:1680px) {
-    
-    footer{
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-    }
-}
+
+
 
 
 .information-links {
@@ -353,6 +345,25 @@ footer {
     margin-top: 3px;
 }
 
+.typing{
+    width: -moz-fit-content;
+    width:fit-content;
+    border-right: 2px solid;
+    border-left:  2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: .15em; /* Adjust as needed */
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.type-aboutme{
+    margin-right: 4.8rem;
+    margin-top: 30px;
+    margin-left: 3rem;
+}
+
 /* swal edit */
 .swal-modal{
     background-color: #837e9fa1;
@@ -400,5 +411,31 @@ footer {
         background-color: #113f0b;
     }to{
        background-color: #37ff00;
+    }
+}
+
+
+/* media screens*/
+@media screen and (min-height:1680px) {
+    
+    footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        padding-top: 40px;
     }
 }
