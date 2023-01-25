@@ -48,7 +48,8 @@ function getApiGitHub(){
             for(let i= 0; i < repos.length; i++){
                 let card = document.createElement('a');
                 card.classList.add('project-item2');
-                card.href = repos[i].url;
+                card.href = repos[i].html_url;
+                card.target = '__blank';
 
                 if (repos[i].description === null) {
                     repos[i].description = 'Projeto sem descrição.';
