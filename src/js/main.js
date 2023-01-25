@@ -5,6 +5,8 @@ const url = document.getElementsByClassName('project-item');
 const color = document.getElementsByClassName('color-ball');
 const email = document.getElementById('email');
 const phone = document.getElementById('phone');
+const typing = document.getElementById('type');
+(document.getElementsByClassName('projects')[1].style.marginTop = '40px');
 
 email.addEventListener('click', function () {
     let copy = email.innerHTML;
@@ -33,8 +35,18 @@ phone.addEventListener('click', function () {
         });
     });
 })
+var i= 0
 
-
+function type(){
+    let aboutMe = `Olá,  eu me chamo Renato Longo Filho, sou desenvolvedor Web Fullstack e Estudante de graduação na UFRJ pelo curso de ciências matemáticas. Durante o curso, tive oportunidade de entrar em contato com algumas linguagens de programação inicialmente voltada para a resolução de problemas matemáticos, foi assim que acabei criando interesse pela 
+    área e comecei a estudar por fora através de cursos como Alura, Dankicode, Rocketseat e etc. Foi através disso que tive minha primeira oportunidade de me desenvolver colocando minhas habilidades em prática com desenvolvimento real através da EJCM, empresa junior na qual eu fiz parte inicialmente como Desevolvedor Back-end.
+    `
+    if(i < aboutMe.length){
+        typing.innerHTML += aboutMe.charAt(i);
+        i++;
+        setTimeout(type, 30);
+    }
+}type()
 
 function getApiGitHub() {
     fetch('https://api.github.com/users/AzzyPog/repos?sort=created').then(
