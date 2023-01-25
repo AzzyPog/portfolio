@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css">
-    <script src="/src/js/main.js" async></script>
-    <title>Portfolio de Renato Longo</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/repositories.css">
+    <script src="/src/js/listRepo.js" async></script>
+    <title>Repositórios</title>
 </head>
-
 <body>
     <main>
         <section>
             <div class="box">
-                <img class="profileImage" id="profile" src="src/assets/me.svg" alt="placeholder">
+                <img class="profileImage" id="profile" src="../src/assets/me.svg" alt="placeholder">
                 <h2 class="myName">Renato Longo Filho</h2>
                 <p>Fullstack Web Developer</p>
             </div>
@@ -28,7 +27,7 @@
                         href="https://ejcm.com.br/quem-somos/" target="_blank" class="information-links">EJCM</a>
                 </p>
                 <p class='information-source'>
-                    <img src="src/assets/linkedin.svg" alt="linkedin" class="source"><a rel="noopener"
+                    <img src="/src/assets/linkedin.svg" alt="linkedin" class="source"><a rel="noopener"
                         href="https://www.linkedin.com/in/renato-longo-filho-6042a3219/" target="_blank"
                         class="information-links">Renato
                         Longo Filho</a>
@@ -114,56 +113,16 @@
         </section>
         <section class="section-2">
             <div class="projects">
-                <p class="my-project">Projetos mais recentes</p>
-                <a class='see-all' href="/pages/repositories.html">Ver todos</a>
+                <p class="my-project">Todos os Projetos</p>
+                <a class='see-all' href="../index.html">Voltar</a>
             </div>
-            <div class="project-list">
-                <a href="placeholder" target="_blank" class="project-item">
-                    <span class="project-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="project-image">
-                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                            </path>
-                        </svg>
-                        <span class="project-name">Project name</span>
-                    </span>
-                    <span class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh
-                        mauris. Nam interdum est eros, eu aliquam purus luctus et.
-                        Nunc elementum lorem tellus.
-                    </span>
-                    <p class="language">
-                        <span class="color-ball"></span><span class="language-content">linguagem</span>
-                    </p>
-                </a>
-                <a class="project-item" href="placeholder" target="_blank">
-                    <span class="project-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="project-image">
-                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                            </path>
-                        </svg>
-                        <span class="project-name">Project name</span>
-                    </span>
-                    <span class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nibh
-                        mauris. Nam interdum est eros, eu aliquam purus luctus et.
-                        Nunc elementum lorem tellus.
-                    </span>
-                    <p class="language">
-                        <span class="color-ball"></span><span class="language-content">linguagem</span>
-                    </p>
-                </a>
+            <div class="all-projects" id="allProjects">
             </div>
-        </section>
 
-    </main>
-
+    </main> 
     <footer>
         Created by Renato Longo Filho
     </footer>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
 </body>
-
-
 </html>
