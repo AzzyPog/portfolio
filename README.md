@@ -45,5 +45,5 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-<footer align='center'>Feito por Renato Longo Filho</footer>
+<p align='center'>Feito por Renato Longo Filho</p>
 
