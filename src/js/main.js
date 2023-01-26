@@ -66,21 +66,26 @@ function getApiGitHub() {
                 } else {
                     projectDesc[i].innerHTML = repos[i].description;
                 }
-                language[i].innerHTML = repos[i].language;
+                if(repos[i].language === null){
+                    language[i].innerHTML = 'Vazio';
+                } else {
+                    language[i].innerHTML = repos[i].language;
+                }
                 url[i].href = repos[i].html_url;
 
-                switch (repos[i].language) {
-                    case null:
-                        language[i].innerHTML = 'Vazio';
-                        break;
-                    case 'Javascript':
+
+                switch (language[i].innerHTML.toLowerCase()) {
+                    case 'javascript':
                         color[i].style.backgroundColor = '#efd81d';
                         break;
-                    case 'CSS':
+                    case 'css':
                         color[i].style.backgroundColor = '#254bdd';
                         break;
-                    case 'HTML':
+                    case 'html':
                         color[i].style.backgroundColor = '#ff8800';
+                        break;
+                    case 'typescript':
+                        color[i].style.backgroundColor = '#7dd2d1';
                         break;
                 };
 
