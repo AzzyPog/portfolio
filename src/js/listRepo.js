@@ -86,6 +86,9 @@ function getApiGitHub(){
                 case 'HTML':
                     color[i].style.backgroundColor = '#ff8800';
                     break;
+                case 'Python':
+                    color[i].style.backgroundColor = '#3776AB';
+                    break;
             };
             }
         }).catch(err => console.log(err));

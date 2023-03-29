@@ -75,6 +75,9 @@ function getApiGitHub() {
 
 
                 switch (language[i].innerHTML.toLowerCase()) {
+                    case null:
+                        language[i].innerHTML = 'Vazio';
+                        break;
                     case 'javascript':
                         color[i].style.backgroundColor = '#efd81d';
                         break;
@@ -86,6 +89,9 @@ function getApiGitHub() {
                         break;
                     case 'typescript':
                         color[i].style.backgroundColor = '#7dd2d1';
+                        break;
+                    case 'Python':
+                        color[i].style.backgroundColor = '#3776AB';
                         break;
                 };
 
