@@ -90,7 +90,7 @@ function getApiGitHub() {
                     case 'typescript':
                         color[i].style.backgroundColor = '#7dd2d1';
                         break;
-                    case 'Python':
+                    case 'python':
                         color[i].style.backgroundColor = '#3776AB';
                         break;
                 };
